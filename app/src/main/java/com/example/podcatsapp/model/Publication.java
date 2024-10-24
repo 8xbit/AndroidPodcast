@@ -6,11 +6,11 @@ public class Publication {
 
     private String title;
     private String description;
-    private Image image;
+    private int image;
     private boolean like;
     private Category category;
 
-    public Publication(String title, String description, Image image, boolean like, Category category) {
+    public Publication(String title, String description, int image, boolean like, Category category) {
         this.title = title;
         this.description = description;
         this.image = image;
@@ -34,11 +34,11 @@ public class Publication {
         this.description = description;
     }
 
-    public Image getImage() {
+    public int getImage() {
         return image;
     }
 
-    public void setImage(Image image) {
+    public void setImage(int image) {
         this.image = image;
     }
 
