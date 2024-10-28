@@ -1,5 +1,6 @@
 package com.example.podcatsapp.view;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,19 +12,18 @@ import com.example.podcatsapp.R;
 import com.example.podcatsapp.controller.PublicationsAdapter;
 import com.example.podcatsapp.model.Category;
 import com.example.podcatsapp.model.Publication;
-import com.google.android.material.navigation.NavigationBarView;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         // Lookup the recyclerview in activity layout
         RecyclerView rvPublications = (RecyclerView) findViewById(R.id.rec_view);
-
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 
         // Initialize contacts
         ArrayList<Publication>  pubList= new ArrayList<>();
@@ -50,20 +50,42 @@ public class MainActivity extends AppCompatActivity {
         pubList.add(p9);
         pubList.add(p10);
 
-
         // Create adapter passing in the sample user data
         PublicationsAdapter adapter = new PublicationsAdapter(pubList);
         // Attach the adapter to the recyclerview to populate items
         rvPublications.setAdapter(adapter);
-
-
         // Set layout manager to position the items
         rvPublications.setLayoutManager(new LinearLayoutManager(this));
-        // Set layout manager to position the items
-        //GridLayoutManager layoutManager = new GridLayoutManager(this, 2, GridLayoutManager.VERTICAL, false);
-        //rvPublications.setLayoutManager(layoutManager);
+
+
+
 
         // Bottom menu
+        // why is not working with swich case ?
+        bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
+            int id = item.getItemId();
+            if (id == R.id.item_home) {
+                return true; // Already on Home
+            } else if (id == R.id.item_videos) {
+             Intent   intent = new Intent(MainActivity.this, PlayerActivity.class);
+                startActivity(intent);
+                return true;
+            } else if (id == R.id.item_upload) {
+                Intent   intent = new Intent(MainActivity.this, PlayerActivity.class);
+                startActivity(intent);
+                return true;
+            }else if (id== R.id.item_setting) {
+                Intent  intent = new Intent(MainActivity.this, SettingsActivity.class);
+                startActivity(intent);
+                return true;
+            }
+            return false; // If no item matches, return false
+        });
+
+
+        bottomNavigationView.setSelectedItemId(R.id.item_home);
+
+
 
 
     }//

@@ -3,5 +3,7 @@
     <string name="menu_lbl_home">Home</string>
     <string name="menu_lbl_video">Videos</string>
     <string name="menu_lbl_audio">Audio</string>
-    <string name="menu_lbl_setting">Settign</string>
+    <string name="menu_lbl_setting">settings</string>
+    <string name="menu_lbl_upload">Upload</string>
+
 </resources>
