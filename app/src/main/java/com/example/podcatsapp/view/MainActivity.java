@@ -11,6 +11,7 @@ import com.example.podcatsapp.R;
 import com.example.podcatsapp.controller.PublicationsAdapter;
 import com.example.podcatsapp.model.Category;
 import com.example.podcatsapp.model.Publication;
+import com.google.android.material.navigation.NavigationBarView;
 
 import java.util.ArrayList;
 
@@ -22,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         // Lookup the recyclerview in activity layout
         RecyclerView rvPublications = (RecyclerView) findViewById(R.id.rec_view);
+
+
         // Initialize contacts
         ArrayList<Publication>  pubList= new ArrayList<>();
         //( title,  description, Image image, boolean like, Category category)
@@ -59,5 +62,9 @@ public class MainActivity extends AppCompatActivity {
         // Set layout manager to position the items
         //GridLayoutManager layoutManager = new GridLayoutManager(this, 2, GridLayoutManager.VERTICAL, false);
         //rvPublications.setLayoutManager(layoutManager);
-    }
-}
+
+        // Bottom menu
+
+
+    }//
+}// class
