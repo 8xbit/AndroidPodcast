@@ -32,12 +32,12 @@ android {
 }
 
 dependencies {
-
     implementation(libs.appcompat)
-    implementation(libs.material)
+    implementation(libs.material) // Uses the version defined in the Version Catalog
     implementation(libs.activity)
     implementation(libs.constraintlayout)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    implementation("com.google.android.exoplayer:exoplayer:2.18.5") // ExoPlayer dependency
 }
