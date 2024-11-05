@@ -1,5 +1,13 @@
 package com.example.podcatsapp.model;
 
+import android.content.Context;
+import android.media.MediaPlayer;
+import android.net.Uri;
+import android.widget.ImageView;
+import android.widget.VideoView;
+
+import com.bumptech.glide.Glide;
+
 import java.io.Serializable;
 
 public class Publication implements Serializable {
@@ -22,6 +30,7 @@ public class Publication implements Serializable {
         this.category = category;
     }
 
+    // Métodos Getter y Setter (sin cambios)
     public String getTitle() {
         return title;
     }
@@ -76,5 +85,33 @@ public class Publication implements Serializable {
 
     public void setCategory(Category category) {
         this.category = category;
+    }
+
+    // Métodos para cargar los recursos desde las URLs
+
+    // Cargar la imagen usando Glide
+    public static void loadImageFromUrl(Context context, String imageUrl, ImageView imageView) {
+        Glide.with(context)
+                .load(imageUrl)
+                .into(imageView);
+    }
+
+    // Reproducir audio desde la URL usando MediaPlayer
+    public static void playAudioFromUrl(Context context, String audioUrl) {
+        MediaPlayer mediaPlayer = new MediaPlayer();
+        try {
+            mediaPlayer.setDataSource(audioUrl);
+            mediaPlayer.prepareAsync();
+            mediaPlayer.setOnPreparedListener(mp -> mp.start());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    // Reproducir video desde la URL usando VideoView
+    public static void playVideoFromUrl(Context context, String videoUrl, VideoView videoView) {
+        Uri videoUri = Uri.parse(videoUrl);
+        videoView.setVideoURI(videoUri);
+        videoView.start();
     }
 }
