@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Theme colors for light mode -->
+    <color name="colorPrimary">@color/pink_primary</color>
+    <color name="colorPrimaryVariant">@color/pink_dark</color>
+    <color name="colorOnPrimary">@color/white</color>
+
+    <!-- Surface colors -->
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorSurfaceVariant">#F3F3F3</color>
+    <color name="colorOnSurface">#1C1B1F</color>
+    <color name="colorOnSurfaceVariant">#49454E</color>
+    <color name="colorOutline">#E0E0E0</color>
+
+    <!-- Status bar -->
+    <color name="statusBarColor">@color/pink_primary</color>
+</resources>

@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Brand colors -->
+    <color name="pink_primary">#FF007A</color>
+    <color name="pink_dark">#C30052</color>
+    <color name="pink_light">#FF4081</color>
+    <color name="dark_background">#121212</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Switch colors -->
+    <color name="switch_thumb_active">@color/pink_primary</color>
+    <color name="switch_thumb_inactive">#424242</color>
+    <color name="switch_track_active">#80FF007A</color>
+    <color name="switch_track_inactive">#80424242</color>
 </resources>
