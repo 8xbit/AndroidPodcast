@@ -32,6 +32,15 @@ android {
 }
 
 dependencies {
+    // Dependencias principales
+    implementation("com.github.bumptech.glide:glide:4.15.1") // Glide
+    implementation("com.github.bumptech.glide:annotation:4.15.1") // Glide annotations (opcional, útil para GlideApp)
+
+    // Si usas Glide con soporte para VideoView y otros casos avanzados:
+    implementation("com.github.bumptech.glide:okhttp3-integration:4.15.1") // Integración de Glide con OkHttp (si usas OkHttp)
+
+    // Si usas la versión de Glide para cargar imágenes y necesitas el manejo de imágenes como caché, etc.
+    annotationProcessor("com.github.bumptech.glide:compiler:4.15.1") // Procesador de anotaciones de Glide
 
     implementation(libs.appcompat)
     implementation(libs.material)
