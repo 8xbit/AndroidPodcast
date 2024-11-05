@@ -1,6 +1,7 @@
 package com.example.podcatsapp.controller;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,19 +14,24 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.podcatsapp.R;
 import com.example.podcatsapp.model.Publication;
+import com.example.podcatsapp.view.PlayerActivity; // Asegúrate de importar la actividad correcta
 
+import java.util.ArrayList;
 import java.util.List;
 
-public class PublicationsAdapter extends RecyclerView.Adapter<PublicationsAdapter.ViewHolder>{
-    private List<String> publicationList;  // Example data type. Replace with your data type.
+public class PublicationsAdapter extends RecyclerView.Adapter<PublicationsAdapter.ViewHolder> {
+    private List<Publication> mPublications;
     private Context context;
 
-    public PublicationsAdapter(Context context, List<String> publicationList) {
+    public PublicationsAdapter(Context context, List<Publication> publications) {
         this.context = context;
-        this.publicationList = publicationList;
+        this.mPublications = publications;
     }
 
-    // class view holder
+    public PublicationsAdapter(ArrayList<Publication> pubList) {
+    }
+
+    // ViewHolder class
     public class ViewHolder extends RecyclerView.ViewHolder {
         public TextView pubTitle;
         public TextView pubDescription;
@@ -33,61 +39,37 @@ public class PublicationsAdapter extends RecyclerView.Adapter<PublicationsAdapte
 
         public ViewHolder(View itemView) {
             super(itemView);
-
-            pubTitle = (TextView) itemView.findViewById(R.id.item_tv_description);
-            pubDescription = (TextView) itemView.findViewById(R.id.item_tv_description);
-            pubImage = (ImageView) itemView.findViewById(R.id.item_iv_image);
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    //  Toast.makeText(Co,"" + itemView.getId(), Toast.LENGTH_SHORT).show();
-                    System.out.println( itemView.getId());
-                }
-            });
+            pubTitle = itemView.findViewById(R.id.item_tv_title);
+            pubDescription = itemView.findViewById(R.id.item_tv_description);
+            pubImage = itemView.findViewById(R.id.item_iv_image);
         }
     }
-    // Store a member variable for the contacts
-    private List<Publication> mPublications;
 
-    //  the constructor
-    public PublicationsAdapter(List<Publication> publications) {
-        mPublications = publications;
-    }
-
-
-
-
-    //implementing all func
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        Context context = parent.getContext();
         LayoutInflater inflater = LayoutInflater.from(context);
-
-        // Inflate the custom layout
         View pubView = inflater.inflate(R.layout.item_pub, parent, false);
-
-        // Return a new holder instance
-        ViewHolder viewHolder = new ViewHolder(pubView);
-        return viewHolder;
+        return new ViewHolder(pubView);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Publication publication = mPublications.get(position);
 
-        // Set item views based on your views and data model
-        TextView pubTitletitle = holder.pubTitle;
-         TextView pubDescription = holder.pubTitle;
-         ImageView pubImage = null;
+        holder.pubTitle.setText(publication.getTitle());
+        holder.pubDescription.setText(publication.getDescription());
+        holder.pubImage.setImageResource(publication.getImage());
 
-
-        pubTitletitle.setText(publication.getTitle());
-        pubDescription.setText(publication.getDescription());
-        //pubImage.setImageResource(R.drawable.cat3);
         holder.itemView.setOnClickListener(v -> {
-            // Displaying a Toast message with the item's position and text.
-            Toast.makeText(context, "Clicked on: " + publication, Toast.LENGTH_SHORT).show();
+            // Crea el Intent para abrir PlayerActivity
+            Intent intent = new Intent(context, PlayerActivity.class);
+            // Pasa la publicación como parámetro
+            intent.putExtra("publication_title", publication.getTitle());
+            intent.putExtra("publication_description", publication.getDescription());
+            intent.putExtra("publication_image", publication.getImage());
+            // Lanza la actividad
+            context.startActivity(intent);
         });
     }
 
@@ -95,6 +77,4 @@ public class PublicationsAdapter extends RecyclerView.Adapter<PublicationsAdapte
     public int getItemCount() {
         return mPublications.size();
     }
-
-
 }

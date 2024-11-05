@@ -6,14 +6,18 @@ public class Publication {
 
     private String title;
     private String description;
-    private int image;
+    private String image;
+    private String audio;
+    private String video;
     private boolean like;
     private Category category;
 
-    public Publication(String title, String description, int image, boolean like, Category category) {
+    public Publication(String title, String description, String image, String audio,String video, boolean like, Category category) {
         this.title = title;
         this.description = description;
         this.image = image;
+        this.audio = audio;
+        this.video = video;
         this.like = like;
         this.category = category;
     }
@@ -34,11 +38,11 @@ public class Publication {
         this.description = description;
     }
 
-    public int getImage() {
+    public String getImage() {
         return image;
     }
 
-    public void setImage(int image) {
+    public void setImage(String image) {
         this.image = image;
     }
 

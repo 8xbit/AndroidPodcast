@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -21,72 +20,38 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        // Lookup the recyclerview in activity layout
-        RecyclerView rvPublications = (RecyclerView) findViewById(R.id.rec_view);
+
+        RecyclerView rvPublications = findViewById(R.id.rec_view);
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 
-        // Initialize contacts
-        ArrayList<Publication>  pubList= new ArrayList<>();
-        //( title,  description, Image image, boolean like, Category category)
-        Publication p1 = new Publication("Publication 1","Descriptions1",R.drawable.cat1,true, Category.PODCAST);
-        Publication p2 = new Publication("Publication 2","Descriptions2",R.drawable.cat2,true, Category.VIDEO);
-        Publication p3 = new Publication("Publication 3","Descriptions3",R.drawable.cat3,true, Category.VIDEO);
-        Publication p4 = new Publication("Publication 4","Descriptions4",R.drawable.cat3,true, Category.PODCAST);
-        Publication p5= new Publication("Publication 4","Descriptions5",R.drawable.cat3,true, Category.PODCAST);
-        Publication p6 = new Publication("Publication 4","Descriptions6",R.drawable.cat3,true, Category.PODCAST);
-        Publication p7 = new Publication("Publication 4","Descriptions7",R.drawable.cat3,true, Category.PODCAST);
-        Publication p8 = new Publication("Publication 4","Descriptions8",R.drawable.cat3,true, Category.PODCAST);
-        Publication p9 = new Publication("Publication 4","Descriptions9",R.drawable.cat3,true, Category.PODCAST);
-        Publication p10 = new Publication("Publication 4","Descriptions10",R.drawable.cat3,true, Category.PODCAST);
-        pubList.add(p1);
-        pubList.add(p2);
-        pubList.add(p3);
-        pubList.add(p4);
-        pubList.add(p5);
-        pubList.add(p6);
-        pubList.add(p7);
-        pubList.add(p10);
-        pubList.add(p8);
-        pubList.add(p9);
-        pubList.add(p10);
+        // Inicializa las publicaciones con audio y video
+        ArrayList<Publication> pubList = new ArrayList<>();
+        pubList.add(new Publication("Publication 1", "Description 1", "url_image","url_audio","url_video", true, Category.PODCAST));
+        pubList.add(new Publication("Publication 2", "Description 2", "url_image","url_audio","url_video", true, Category.VIDEO));
+        // Agrega más publicaciones según sea necesario...
 
-        // Create adapter passing in the sample user data
-        PublicationsAdapter adapter = new PublicationsAdapter(pubList);
-        // Attach the adapter to the recyclerview to populate items
+        // Crea el adaptador y lo asigna al RecyclerView
+        PublicationsAdapter adapter = new PublicationsAdapter(this, pubList);
         rvPublications.setAdapter(adapter);
-        // Set layout manager to position the items
         rvPublications.setLayoutManager(new LinearLayoutManager(this));
 
-
-
-
-        // Bottom menu
-        // why is not working with swich case ?
+        // Configura el Bottom Navigation
         bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
             int id = item.getItemId();
             if (id == R.id.item_home) {
-                return true; // Already on Home
-            } else if (id == R.id.item_videos) {
-             Intent   intent = new Intent(MainActivity.this, PlayerActivity.class);
-                startActivity(intent);
+                return true; // Ya estamos en Home
+            } else if (id == R.id.item_videos || id == R.id.item_upload) {
+                // Si se selecciona "Videos" o "Upload"
+                startActivity(new Intent(MainActivity.this, PlayerActivity.class));
                 return true;
-            } else if (id == R.id.item_upload) {
-                Intent   intent = new Intent(MainActivity.this, PlayerActivity.class);
-                startActivity(intent);
-                return true;
-            }else if (id== R.id.item_setting) {
-                Intent  intent = new Intent(MainActivity.this, SettingsActivity.class);
-                startActivity(intent);
+            } else if (id == R.id.item_setting) {
+                // Si se selecciona "Settings"
+                startActivity(new Intent(MainActivity.this, SettingsActivity.class));
                 return true;
             }
-            return false; // If no item matches, return false
+            return false; // Si no coincide ningún item
         });
 
-
         bottomNavigationView.setSelectedItemId(R.id.item_home);
-
-
-
-
-    }//
-}// class
+    }
+}
