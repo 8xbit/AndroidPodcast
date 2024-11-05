@@ -7,16 +7,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.podcatsapp.R;
 import com.example.podcatsapp.model.Publication;
-import com.example.podcatsapp.view.PlayerActivity; // Asegúrate de importar la actividad correcta
+import com.example.podcatsapp.view.PlayerActivity;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class PublicationsAdapter extends RecyclerView.Adapter<PublicationsAdapter.ViewHolder> {
@@ -28,10 +26,6 @@ public class PublicationsAdapter extends RecyclerView.Adapter<PublicationsAdapte
         this.mPublications = publications;
     }
 
-    public PublicationsAdapter(ArrayList<Publication> pubList) {
-    }
-
-    // ViewHolder class
     public class ViewHolder extends RecyclerView.ViewHolder {
         public TextView pubTitle;
         public TextView pubDescription;
@@ -59,16 +53,13 @@ public class PublicationsAdapter extends RecyclerView.Adapter<PublicationsAdapte
 
         holder.pubTitle.setText(publication.getTitle());
         holder.pubDescription.setText(publication.getDescription());
-        holder.pubImage.setImageResource(publication.getImage());
 
-        holder.itemView.setOnClickListener(v -> {
+        // Al hacer clic en la imagen de la publicación
+        holder.pubImage.setOnClickListener(v -> {
             // Crea el Intent para abrir PlayerActivity
             Intent intent = new Intent(context, PlayerActivity.class);
-            // Pasa la publicación como parámetro
-            intent.putExtra("publication_title", publication.getTitle());
-            intent.putExtra("publication_description", publication.getDescription());
-            intent.putExtra("publication_image", publication.getImage());
-            // Lanza la actividad
+            // Pasa la publicación completa como parámetro (usando Serializable)
+            intent.putExtra("publication", publication);
             context.startActivity(intent);
         });
     }
