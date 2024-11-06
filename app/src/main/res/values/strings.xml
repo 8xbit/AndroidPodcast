@@ -14,4 +14,9 @@
     <string name="dark_mode">Dark mode</string>
     <string name="username">Vini Jr</string>
 
+    <string name="edit_profile_title">Edit Profile</string>
+    <string name="username_label">Username</string>
+    <string name="enter_username">Enter new username</string>
+    <string name="save_changes">Save Changes</string>
+
 </resources>

@@ -1,5 +1,6 @@
 package com.example.podcatsapp.view;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -8,6 +9,7 @@ import android.widget.Switch;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import com.example.podcatsapp.R;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class SettingsActivity extends AppCompatActivity {
     private Switch switchNotifications;
@@ -50,6 +52,10 @@ public class SettingsActivity extends AppCompatActivity {
             updateTheme(isChecked);
             recreate(); // Recreate the activity to apply the theme
         });
+
+        // Setup Bottom Navigation
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+        setupBottomNavigation(bottomNavigationView);
     }
 
     private void setupSwitchTint(Switch switchComponent) {
@@ -77,11 +83,33 @@ public class SettingsActivity extends AppCompatActivity {
         AppCompatDelegate.setDefaultNightMode(defaultNightMode);
     }
 
+    // Method to navigate to EditProfileActivity
     public void editProfile(View view) {
-        // code to edit profile
+        Intent intent = new Intent(SettingsActivity.this, EditProfileActivity.class);
+        startActivity(intent);
     }
 
     public void changePassword(View view) {
-        // code to change password
+        // Add logic to handle password change
+    }
+
+    // Method to set up the Bottom Navigation
+    private void setupBottomNavigation(BottomNavigationView bottomNavigationView) {
+        bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
+            int id = item.getItemId();
+            if (id == R.id.item_home) {
+                startActivity(new Intent(SettingsActivity.this, MainActivity.class));
+                return true;
+            } else if (id == R.id.item_videos) {
+                startActivity(new Intent(SettingsActivity.this, PlayerActivity.class));
+                return true;
+            } else if (id == R.id.item_upload) {
+                startActivity(new Intent(SettingsActivity.this, UploadActivity.class));
+                return true;
+            } else if (id == R.id.item_setting) {
+                return true; // Already in SettingsActivity
+            }
+            return false;
+        });
     }
 }
