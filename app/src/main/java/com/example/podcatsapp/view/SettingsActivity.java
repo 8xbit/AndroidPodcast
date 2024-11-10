@@ -6,16 +6,20 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Switch;
+import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import com.example.podcatsapp.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class SettingsActivity extends AppCompatActivity {
+
     private Switch switchNotifications;
     private Switch switchDarkMode;
+    private TextView usernameTextView;
     private SharedPreferences sharedPreferences;
     private static final String DARK_MODE_KEY = "dark_mode_enabled";
+    private static final String USERNAME_KEY = "username";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +36,7 @@ public class SettingsActivity extends AppCompatActivity {
 
         switchNotifications = findViewById(R.id.switch_notifications);
         switchDarkMode = findViewById(R.id.switch_dark_mode);
+        usernameTextView = findViewById(R.id.username); // TextView para el nombre de usuario
 
         // Set initial switch state based on saved preference
         switchDarkMode.setChecked(isDarkMode);
@@ -56,6 +61,21 @@ public class SettingsActivity extends AppCompatActivity {
         // Setup Bottom Navigation
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         setupBottomNavigation(bottomNavigationView);
+
+        // Load initial username
+        loadUsername();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        // Recargar el nombre de usuario en onResume por si ha sido actualizado en EditProfileActivity
+        loadUsername();
+    }
+
+    private void loadUsername() {
+        String username = sharedPreferences.getString(USERNAME_KEY, "Default Username");
+        usernameTextView.setText(username);
     }
 
     private void setupSwitchTint(Switch switchComponent) {
@@ -83,7 +103,6 @@ public class SettingsActivity extends AppCompatActivity {
         AppCompatDelegate.setDefaultNightMode(defaultNightMode);
     }
 
-
     public void editProfile(View view) {
         Intent intent = new Intent(SettingsActivity.this, EditProfileActivity.class);
         startActivity(intent);
@@ -94,7 +113,6 @@ public class SettingsActivity extends AppCompatActivity {
         Intent intent = new Intent(SettingsActivity.this, ChangePasswordActivity.class);
         startActivity(intent);
     }
-
 
     // Method to set up the Bottom Navigation
     private void setupBottomNavigation(BottomNavigationView bottomNavigationView) {
