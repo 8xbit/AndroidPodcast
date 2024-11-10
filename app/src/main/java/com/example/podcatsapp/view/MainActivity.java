@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -12,7 +11,9 @@ import com.example.podcatsapp.R;
 import com.example.podcatsapp.controller.PublicationsAdapter;
 import com.example.podcatsapp.model.Category;
 import com.example.podcatsapp.model.Publication;
+import com.example.podcatsapp.view.UploadLocalActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.FirebaseApp;
 
 import java.util.ArrayList;
 
@@ -21,11 +22,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+       // FirebaseAuth.getInstance().signOut();
+        //initialize firebase
+        FirebaseApp.initializeApp(this);
         // Lookup the recyclerview in activity layout
         RecyclerView rvPublications = (RecyclerView) findViewById(R.id.rec_view);
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 
-        // Initialize contacts
+        FirebaseApp.initializeApp(this);
+
+       /* // Initialize contacts
         ArrayList<Publication>  pubList= new ArrayList<>();
         //( title,  description, Image image, boolean like, Category category)
         Publication p1 = new Publication("Publication 1","Descriptions1",R.drawable.cat1,true, Category.PODCAST);
@@ -56,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         rvPublications.setAdapter(adapter);
         // Set layout manager to position the items
         rvPublications.setLayoutManager(new LinearLayoutManager(this));
-
+*/
 
 
 
@@ -71,11 +77,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 return true;
             } else if (id == R.id.item_upload) {
-                Intent   intent = new Intent(MainActivity.this, PlayerActivity.class);
+                Intent   intent = new Intent(MainActivity.this, SettingsActivity.class);
                 startActivity(intent);
                 return true;
             }else if (id== R.id.item_setting) {
-                Intent  intent = new Intent(MainActivity.this, SettingsActivity.class);
+                Intent  intent = new Intent(MainActivity.this, UploadLocalActivity.class);
                 startActivity(intent);
                 return true;
             }

@@ -3,19 +3,37 @@ package com.example.podcatsapp.model;
 import android.media.Image;
 
 public class Publication {
-
+    private String videoId;
     private String title;
     private String description;
-    private int image;
+    private String videoUrl;
+    private String thumbnailUrl;
+    private long uploadDate;
+    private String userId;
     private boolean like;
     private Category category;
 
-    public Publication(String title, String description, int image, boolean like, Category category) {
+    public Publication() {
+    }
+
+    public Publication(String videoId, String title, String description, String videoUrl, String thumbnailUrl, String userId, boolean like, Category category) {
+        this.videoId = videoId;
         this.title = title;
         this.description = description;
-        this.image = image;
+        this.videoUrl = videoUrl;
+        this.thumbnailUrl = thumbnailUrl;
+        this.uploadDate = uploadDate;
+        this.userId = userId;
         this.like = like;
         this.category = category;
+    }
+
+    public String getVideoId() {
+        return videoId;
+    }
+
+    public void setVideoId(String videoId) {
+        this.videoId = videoId;
     }
 
     public String getTitle() {
@@ -34,12 +52,36 @@ public class Publication {
         this.description = description;
     }
 
-    public int getImage() {
-        return image;
+    public String getVideoUrl() {
+        return videoUrl;
     }
 
-    public void setImage(int image) {
-        this.image = image;
+    public void setVideoUrl(String videoUrl) {
+        this.videoUrl = videoUrl;
+    }
+
+    public String getThumbnailUrl() {
+        return thumbnailUrl;
+    }
+
+    public void setThumbnailUrl(String thumbnailUrl) {
+        this.thumbnailUrl = thumbnailUrl;
+    }
+
+    public long getUploadDate() {
+        return uploadDate;
+    }
+
+    public void setUploadDate(long uploadDate) {
+        this.uploadDate = uploadDate;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
     public boolean isLike() {

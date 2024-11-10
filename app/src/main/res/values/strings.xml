@@ -5,5 +5,11 @@
     <string name="menu_lbl_audio">Audio</string>
     <string name="menu_lbl_setting">settings</string>
     <string name="menu_lbl_upload">Upload</string>
+    <string name="textpublishbutton">Publish Video</string>
+    <string name="textbuttonrecord">Record Video</string>
+    <string name="description_hint">Enter Description</string>
+    <string name="title_hint">Enter Title</string>
+    <string name="create_account">Create new account</string>
+    <string name="txt_already_has_account">Already has account,Login now !</string>
 
 </resources>

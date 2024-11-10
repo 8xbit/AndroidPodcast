@@ -8,6 +8,12 @@ material = "1.12.0"
 activity = "1.9.2"
 constraintlayout = "2.1.4"
 
+firebase-bom = "32.0.0" # This should be the correct version for BOM.
+firebase-storage = "32.0.0" # Using BOM version
+firebase-database = "20.5.1"
+googleGmsGoogleServices = "4.4.2"
+firebaseAuth = "23.1.0" # Use consistent versions
+
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
@@ -17,6 +23,12 @@ material = { group = "com.google.android.material", name = "material", version.r
 activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 
+# Using the Firebase BOM to manage Firebase dependencies
+firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebase-bom" }
+firebase-database = { group = "com.google.firebase", name = "firebase-database", version = "20.5.1" } # Updated version as per BOM
+firebase-storage = { group = "com.google.firebase", name = "firebase-storage", version = "32.0.0" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" } # Consistent with BOM
+
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
-
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }
