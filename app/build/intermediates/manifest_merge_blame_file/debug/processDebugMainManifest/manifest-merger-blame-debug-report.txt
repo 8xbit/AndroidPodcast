@@ -20,7 +20,7 @@
 15-->[androidx.core:core:1.13.0] C:\Users\adrim\.gradle\caches\transforms-4\42dfdf811721b94244c28f65a2afec29\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
 16
 17    <application
-17-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:5:5-38:19
+17-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:5:5-43:19
 18        android:allowBackup="true"
 18-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:6:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -43,116 +43,122 @@
 29        android:theme="@style/Theme.PodCatsApp" >
 29-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:13:9-48
 30        <activity
-30-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:15:9-17:40
+30-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:16:9-18:40
 31            android:name="com.example.podcatsapp.view.EditProfileActivity"
-31-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:16:13-53
+31-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:17:13-53
 32            android:exported="false" />
-32-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:17:13-37
+32-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:18:13-37
 33        <activity
-33-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:18:9-21:40
+33-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:19:9-22:40
 34            android:name="com.example.podcatsapp.view.SettingsActivity"
-34-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:19:13-50
+34-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:20:13-50
 35            android:configChanges="uiMode"
-35-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:20:13-43
+35-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:21:13-43
 36            android:exported="false" />
-36-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:21:13-37
+36-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:22:13-37
 37        <activity
-37-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:22:9-24:40
+37-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:23:9-25:40
 38            android:name="com.example.podcatsapp.view.PlayerActivity"
-38-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:23:13-48
+38-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:24:13-48
 39            android:exported="false" />
-39-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:24:13-37
+39-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:25:13-37
 40        <activity
-40-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:25:9-27:40
+40-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:26:9-28:40
 41            android:name="com.example.podcatsapp.view.UploadActivity"
-41-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:26:13-48
+41-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:27:13-48
 42            android:exported="false" />
-42-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:27:13-37
+42-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:28:13-37
 43        <activity
-43-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:28:9-37:20
+43-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:29:9-37:20
 44            android:name="com.example.podcatsapp.view.MainActivity"
-44-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:29:13-46
+44-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:30:13-46
 45            android:configChanges="uiMode"
-45-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:30:13-43
+45-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:31:13-43
 46            android:exported="true" >
-46-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:31:13-36
+46-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:32:13-36
 47            <intent-filter>
-47-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:32:13-36:29
+47-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:33:13-36:29
 48                <action android:name="android.intent.action.MAIN" />
-48-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:33:17-69
-48-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:33:25-66
+48-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:34:17-69
+48-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:34:25-66
 49
 50                <category android:name="android.intent.category.LAUNCHER" />
 50-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:35:17-77
 50-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:35:27-74
 51            </intent-filter>
 52        </activity>
-53
-54        <provider
-54-->[androidx.emoji2:emoji2:1.3.0] C:\Users\adrim\.gradle\caches\transforms-4\51f1927f6706bb4e824223b170abb02f\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
-55            android:name="androidx.startup.InitializationProvider"
-55-->[androidx.emoji2:emoji2:1.3.0] C:\Users\adrim\.gradle\caches\transforms-4\51f1927f6706bb4e824223b170abb02f\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
-56            android:authorities="com.example.podcatsapp.androidx-startup"
-56-->[androidx.emoji2:emoji2:1.3.0] C:\Users\adrim\.gradle\caches\transforms-4\51f1927f6706bb4e824223b170abb02f\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
-57            android:exported="false" >
-57-->[androidx.emoji2:emoji2:1.3.0] C:\Users\adrim\.gradle\caches\transforms-4\51f1927f6706bb4e824223b170abb02f\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
-58            <meta-data
-58-->[androidx.emoji2:emoji2:1.3.0] C:\Users\adrim\.gradle\caches\transforms-4\51f1927f6706bb4e824223b170abb02f\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
-59                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-59-->[androidx.emoji2:emoji2:1.3.0] C:\Users\adrim\.gradle\caches\transforms-4\51f1927f6706bb4e824223b170abb02f\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
-60                android:value="androidx.startup" />
-60-->[androidx.emoji2:emoji2:1.3.0] C:\Users\adrim\.gradle\caches\transforms-4\51f1927f6706bb4e824223b170abb02f\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+53        <activity
+53-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:40:9-42:40
+54            android:name="com.example.podcatsapp.view.ChangePasswordActivity"
+54-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:41:13-56
+55            android:exported="false" />
+55-->C:\Users\adrim\Desktop\AndroidPodcast\app\src\main\AndroidManifest.xml:42:13-37
+56
+57        <provider
+57-->[androidx.emoji2:emoji2:1.3.0] C:\Users\adrim\.gradle\caches\transforms-4\51f1927f6706bb4e824223b170abb02f\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+58            android:name="androidx.startup.InitializationProvider"
+58-->[androidx.emoji2:emoji2:1.3.0] C:\Users\adrim\.gradle\caches\transforms-4\51f1927f6706bb4e824223b170abb02f\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+59            android:authorities="com.example.podcatsapp.androidx-startup"
+59-->[androidx.emoji2:emoji2:1.3.0] C:\Users\adrim\.gradle\caches\transforms-4\51f1927f6706bb4e824223b170abb02f\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+60            android:exported="false" >
+60-->[androidx.emoji2:emoji2:1.3.0] C:\Users\adrim\.gradle\caches\transforms-4\51f1927f6706bb4e824223b170abb02f\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
 61            <meta-data
-61-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\adrim\.gradle\caches\transforms-4\fab565b32d1caf7d32cc0e9c5a768a04\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
-62                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-62-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\adrim\.gradle\caches\transforms-4\fab565b32d1caf7d32cc0e9c5a768a04\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+61-->[androidx.emoji2:emoji2:1.3.0] C:\Users\adrim\.gradle\caches\transforms-4\51f1927f6706bb4e824223b170abb02f\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+62                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+62-->[androidx.emoji2:emoji2:1.3.0] C:\Users\adrim\.gradle\caches\transforms-4\51f1927f6706bb4e824223b170abb02f\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
 63                android:value="androidx.startup" />
-63-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\adrim\.gradle\caches\transforms-4\fab565b32d1caf7d32cc0e9c5a768a04\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+63-->[androidx.emoji2:emoji2:1.3.0] C:\Users\adrim\.gradle\caches\transforms-4\51f1927f6706bb4e824223b170abb02f\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
 64            <meta-data
-64-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
-65                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-65-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+64-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\adrim\.gradle\caches\transforms-4\fab565b32d1caf7d32cc0e9c5a768a04\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+65                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+65-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\adrim\.gradle\caches\transforms-4\fab565b32d1caf7d32cc0e9c5a768a04\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
 66                android:value="androidx.startup" />
-66-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
-67        </provider>
-68
-69        <receiver
-69-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
-70            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-70-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
-71            android:directBootAware="false"
-71-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
-72            android:enabled="true"
-72-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
-73            android:exported="true"
-73-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
-74            android:permission="android.permission.DUMP" >
-74-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
-75            <intent-filter>
-75-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
-76                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-76-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
-76-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
-77            </intent-filter>
+66-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\adrim\.gradle\caches\transforms-4\fab565b32d1caf7d32cc0e9c5a768a04\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+67            <meta-data
+67-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+68                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+68-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+69                android:value="androidx.startup" />
+69-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+70        </provider>
+71
+72        <receiver
+72-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+73            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+73-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+74            android:directBootAware="false"
+74-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+75            android:enabled="true"
+75-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+76            android:exported="true"
+76-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+77            android:permission="android.permission.DUMP" >
+77-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
 78            <intent-filter>
-78-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
-79                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-79-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
-79-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+78-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+79                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+79-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+79-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
 80            </intent-filter>
 81            <intent-filter>
-81-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
-82                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-82-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
-82-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+81-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+82                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+82-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+82-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
 83            </intent-filter>
 84            <intent-filter>
-84-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
-85                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-85-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
-85-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+84-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+85                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+85-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+85-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
 86            </intent-filter>
-87        </receiver>
-88    </application>
-89
-90</manifest>
+87            <intent-filter>
+87-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+88                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+88-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+88-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrim\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+89            </intent-filter>
+90        </receiver>
+91    </application>
+92
+93</manifest>

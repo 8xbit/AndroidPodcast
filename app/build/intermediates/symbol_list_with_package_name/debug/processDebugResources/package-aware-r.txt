@@ -3227,6 +3227,7 @@ id chain
 id chain2
 id chains
 id changePasswordLayout
+id change_password_card
 id checkbox
 id checked
 id chronometer
@@ -3239,6 +3240,7 @@ id closest
 id collapseActionView
 id compress
 id confirm_button
+id confirm_password
 id constraint
 id container
 id content
@@ -3438,6 +3440,7 @@ id navigation_header_container
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
+id new_password
 id noScroll
 id noState
 id none
@@ -3447,6 +3450,7 @@ id notification_background
 id notification_main_column
 id notification_main_column_container
 id off
+id old_password
 id on
 id onInterceptTouchReturnSwipe
 id open_search_bar_text_view
@@ -3773,6 +3777,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout edit_password
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_pub
@@ -3889,9 +3894,13 @@ string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string clear_text_end_icon_content_description
+string confirm_new_password
+string confirm_password
 string dark_mode
 string edit_profile
 string edit_profile_title
+string enter_new_password
+string enter_old_password
 string enter_username
 string error_a11y_label
 string error_icon_content_description
@@ -4006,6 +4015,10 @@ string mtrl_switch_track_decoration_path
 string mtrl_switch_track_path
 string mtrl_timepicker_cancel
 string mtrl_timepicker_confirm
+string new_password
+string old_password
+string password_changed_successfully
+string password_mismatch
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through

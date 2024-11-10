@@ -83,15 +83,18 @@ public class SettingsActivity extends AppCompatActivity {
         AppCompatDelegate.setDefaultNightMode(defaultNightMode);
     }
 
-    // Method to navigate to EditProfileActivity
+
     public void editProfile(View view) {
         Intent intent = new Intent(SettingsActivity.this, EditProfileActivity.class);
         startActivity(intent);
     }
 
     public void changePassword(View view) {
-        // Add logic to handle password change
+        // Navegar a la actividad ChangePasswordActivity
+        Intent intent = new Intent(SettingsActivity.this, ChangePasswordActivity.class);
+        startActivity(intent);
     }
+
 
     // Method to set up the Bottom Navigation
     private void setupBottomNavigation(BottomNavigationView bottomNavigationView) {
