@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PodCats</string>
+
+    <string name="login">Saioa Hasi</string>
+    <string name="register">Erregistratu</string>
+    <string name="record_video">Grabatu Bideoa</string>
+    <string name="upload_video">Igo Bideoa</string>
+    <string name="update">Eguneratu</string>
+    <string name="like">Gustatu</string>
+    <string name="liked">Gustatu zaizu</string>
+
+    <string name="name">Izena</string>
+    <string name="email">Posta Elektronikoa</string>
+    <string name="password">Pasahitza</string>
+    <string name="title">Izenburua</string>
+    <string name="description">Deskribapena</string>
+    <string name="update_name">Izena Eguneratu</string>
+    <string name="update_password">Pasahitza Eguneratu</string>
+
+    <string name="name_required">Izena beharrezkoa da</string>
+    <string name="email_required">Posta elektronikoa beharrezkoa da</string>
+    <string name="password_required">Pasahitza beharrezkoa da</string>
+    <string name="password_length">Pasahitzak gutxienez 6 karaktere izan behar ditu</string>
+    <string name="title_required">Izenburua beharrezkoa da</string>
+    <string name="description_required">Deskribapena beharrezkoa da</string>
+    <string name="permissions_required">Kamera eta biltegiratze baimenak beharrezkoak dira</string>
+
+    <string name="registration_success">Erregistroa arrakastatsua izan da</string>
+    <string name="registration_failed">Erregistroa huts egin du</string>
+    <string name="login_success">Saioa arrakastaz hasi da</string>
+    <string name="login_failed">Saioa hastean errorea</string>
+    <string name="database_error">Datu-basearen errorea</string>
+    <string name="like_success">Bideoa gustatu zaizu</string>
+    <string name="like_failed">Bideoa gustatzea huts egin du</string>
+    <string name="login_required">Bideoak gustatzeko saioa hasi behar duzu</string>
+    <string name="no_camera_app">Ez da kamera aplikaziorik aurkitu</string>
+    <string name="video_recorded">Bideoa ongi grabatu da</string>
+    <string name="thumbnail_error">Miniatura sortzea huts egin du</string>
+    <string name="upload_success">Igoera arrakastatsua izan da</string>
+    <string name="upload_failed">Igoera huts egin du</string>
+    <string name="record_video_first">Mesedez, lehenik bideo bat grabatu</string>
+    <string name="language_changed">Hizkuntza aldatu da</string>
+    <string name="password_updated">Pasahitza arrakastaz eguneratu da</string>
+    <string name="password_update_failed">Pasahitza eguneratzea huts egin du</string>
+    <string name="settings_updated">Ezarpenak eguneratu dira</string>
+
+    <string name="select_language">Hizkuntza Aukeratu</string>
+    <string name="feed">Feed</string>
+    <string name="upload">Igo</string>
+    <string name="settings">Ezarpenak</string>
+    <string name="likes">Atseginak</string>
+    <string name="splash_title">PodCats</string>
+    <string name="btn_log_out">Saioa Itxi</string>
+    <string name="btn_audios">Audioak</string>
+    <string name="btn_videos">Bideoak</string>
+    <string name="record_audio">Audioa Grabatu</string>
+    <string name="stop_recording">Grabatzea Gelditu</string>
+    <string name="select_audio_from_gallery">Aukeratu Audioa Galeriatik</string>
+    <string name="select_thumbnail_from_gallery">Aukeratu Miniatura Galeriatik</string>
+    <string name="thumbnail">Miniatura</string>
+    <string name="title_hint">Izenburua</string>
+    <string name="description_hint">Deskribapena</string>
+
+    <string name="recording_started">Grabaketa hasita...</string>
+    <string name="recording_stopped">Grabaketa geldituta</string>
+    <string name="recording_failed">Grabaketa huts egin du</string>
+    <string name="audio_selected">Audioa hautatua</string>
+    <string name="thumbnail_selected">Miniatura hautatua</string>
+    <string name="select_audio_first">Mesedez, hautatu edo grabatu audio bat lehenik.</string>
+    <string name="select_thumbnail_first">Mesedez, aukeratu miniatura bat.</string>
+    <string name="permissions_required_title">Baimenak Beharrezkoak</string>
+    <string name="permissions_required_message">Audio grabaketarako eta biltegiratzerako baimenak beharrezkoak dira audioa grabatzeko eta igozeko.</string>
+    <string name="grant">Ematea</string>
+    <string name="cancel">Ezeztatu</string>
+    <string name="audio_title">Audioaren Izenburua</string>
+    <string name="select_thumbnail">Miniatura sortu</string>
+    <string name="upload_audio">Audioa igo</string>
+    <string name="audio_description">Audioaren deskribapena</string>
+    <string name="dark_mode">Modu Iluna</string>
+    <string name="change_password">Pasahitza aldatu</string>
+    <string name="edit_profile">Profila editatu</string>
+    <string name="menu_lbl_setting">Ezarpenak</string>
+    <string name="username">Erabiltzaile izena</string>
+    <string name="back_button_desc">Atzera joan</string>
+    <string name="profile_image_desc">Profil irudia</string>
+    <string name="edit_profile_icon_desc">Profila editatu</string>
+    <string name="change_password_icon_desc">Pasahitza aldatu</string>
+    <string name="enter_username">Sartu erabiltzaile izena</string>
+    <string name="save_changes">Aldaketak gorde</string>
+    <string name="username_label">Erabiltzaile izena</string>
+    <string name="push_notifications">Jakinarazpenak</string>
+    <string name="old_password">Lehenagoko pasahitza</string>
+    <string name="enter_old_password">Sartu lehenagoko pasahitza</string>
+    <string name="new_password">Pasahitz berria</string>
+    <string name="enter_new_password">Sartu pasahitz berria</string>
+    <string name="confirm_new_password">Pasahitz berria baieztatu</string>
+    <string name="confirm_password">Pasahitza baieztatu</string>
+    <string name="password_changed_successfully">Pasahitza arrakastaz aldatu da</string>
+    <string name="password_mismatch">Pasahitza ez dator bat</string>
+    <string name="error_password_change_failed">Errorea: pasahitza aldatu ezin izan da</string>
+    <string name="error_invalid_old_password">Errorea: lehenagoko pasahitza baliogabea da</string>
+    <string name="error_user_not_logged_in">Errorea: erabiltzailea ez dago saioa hasi</string>
+
+    <!-- Array Resources -->
+    <string-array name="language_options">
+        <item>Euskera</item>
+        <item>Ingelesa</item>
+        <item>Gaztelera</item>
+    </string-array>
+</resources>
+

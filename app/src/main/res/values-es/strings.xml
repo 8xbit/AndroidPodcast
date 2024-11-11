@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PodCats</string>
+
+    <string name="login">Iniciar sesión</string>
+    <string name="register">Registrarse</string>
+    <string name="record_video">Grabar Video</string>
+    <string name="upload_video">Subir Video</string>
+    <string name="update">Actualizar</string>
+    <string name="like">Me gusta</string>
+    <string name="liked">Me gustó</string>
+
+    <string name="name">Nombre</string>
+    <string name="email">Correo electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="title">Título</string>
+    <string name="description">Descripción</string>
+    <string name="update_name">Actualizar Nombre</string>
+    <string name="update_password">Actualizar Contraseña</string>
+
+    <string name="name_required">El nombre es obligatorio</string>
+    <string name="email_required">El correo electrónico es obligatorio</string>
+    <string name="password_required">La contraseña es obligatoria</string>
+    <string name="password_length">La contraseña debe tener al menos 6 caracteres</string>
+    <string name="title_required">El título es obligatorio</string>
+    <string name="description_required">La descripción es obligatoria</string>
+    <string name="permissions_required">Se requieren permisos de cámara y almacenamiento</string>
+
+    <string name="registration_success">Registro exitoso</string>
+    <string name="registration_failed">Registro fallido</string>
+    <string name="login_success">Inicio de sesión exitoso</string>
+    <string name="login_failed">Inicio de sesión fallido</string>
+    <string name="database_error">Error de base de datos</string>
+    <string name="like_success">Te gustó el video</string>
+    <string name="like_failed">No se pudo gustar el video</string>
+    <string name="login_required">Necesitas iniciar sesión para gustar videos</string>
+    <string name="no_camera_app">No se encontró una aplicación de cámara</string>
+    <string name="video_recorded">Video grabado exitosamente</string>
+    <string name="thumbnail_error">No se pudo generar la miniatura</string>
+    <string name="upload_success">Subida exitosa</string>
+    <string name="upload_failed">Subida fallida</string>
+    <string name="record_video_first">Por favor, graba un video primero</string>
+    <string name="language_changed">Idioma cambiado</string>
+    <string name="password_updated">Contraseña actualizada exitosamente</string>
+    <string name="password_update_failed">No se pudo actualizar la contraseña</string>
+    <string name="settings_updated">Configuraciones actualizadas</string>
+
+    <string name="select_language">Seleccionar Idioma</string>
+    <string name="feed">Feed</string>
+    <string name="upload">Subir</string>
+    <string name="settings">Ajustes</string>
+    <string name="likes">Me gusta</string>
+    <string name="splash_title">PodCats</string>
+    <string name="btn_log_out">Cerrar sesión</string>
+    <string name="btn_audios">Audio</string>
+    <string name="btn_videos">Videos</string>
+    <string name="record_audio">Grabar Audio</string>
+    <string name="stop_recording">Detener Grabación</string>
+    <string name="select_audio_from_gallery">Seleccionar Audio de la Galería</string>
+    <string name="select_thumbnail_from_gallery">Seleccionar Miniatura de la Galería</string>
+    <string name="thumbnail">Miniatura</string>
+    <string name="title_hint">Título</string>
+    <string name="description_hint">Descripción</string>
+
+    <string name="recording_started">Grabación iniciada...</string>
+    <string name="recording_stopped">Grabación detenida</string>
+    <string name="recording_failed">Grabación fallida</string>
+    <string name="audio_selected">Audio seleccionado</string>
+    <string name="thumbnail_selected">Miniatura seleccionada</string>
+    <string name="select_audio_first">Por favor, selecciona o graba un audio primero.</string>
+    <string name="select_thumbnail_first">Por favor, selecciona una imagen de miniatura.</string>
+    <string name="permissions_required_title">Permisos Requeridos</string>
+    <string name="permissions_required_message">Se requieren permisos de grabación de audio y almacenamiento para grabar y subir audio.</string>
+    <string name="grant">Conceder</string>
+    <string name="cancel">Cancelar</string>
+    <string name="audio_title">Título del Audio</string>
+    <string name="select_thumbnail">Crear una miniatura</string>
+    <string name="upload_audio">Subir audio</string>
+    <string name="audio_description">descripción del audio</string>
+    <string name="dark_mode">modo oscuro</string>
+    <string name="change_password">cambiar contraseña</string>
+    <string name="edit_profile">editar perfil</string>
+    <string name="menu_lbl_setting">Configuración</string>
+    <string name="username">nombre de usuario</string>
+    <string name="back_button_desc">volver</string>
+    <string name="profile_image_desc">imagen de perfil</string>
+    <string name="edit_profile_icon_desc">editar perfil</string>
+    <string name="change_password_icon_desc">cambiar contraseña</string>
+    <string name="enter_username">Ingresa el nombre de usuario</string>
+    <string name="save_changes">guardar cambios</string>
+    <string name="username_label">nombre de usuario</string>
+    <string name="push_notifications">notificación</string>
+    <string name="old_password">Contraseña antigua</string>
+    <string name="enter_old_password">Ingresa la contraseña antigua</string>
+    <string name="new_password">Nueva contraseña</string>
+    <string name="enter_new_password">Ingresa la nueva contraseña</string>
+    <string name="confirm_new_password">Confirma la nueva contraseña</string>
+    <string name="confirm_password">Confirmar contraseña</string>
+    <string name="password_changed_successfully">Contraseña cambiada exitosamente</string>
+    <string name="password_mismatch">Contraseña no coincide</string>
+    <string name="error_password_change_failed">Error: no se pudo cambiar la contraseña</string>
+    <string name="error_invalid_old_password">Error: contraseña antigua inválida</string>
+    <string name="error_user_not_logged_in">Error: usuario no ha iniciado sesión</string>
+
+    <string name="en_lang">Inglés</string>
+    <string name="en_eus">Euskera</string>
+    <string name="en_langu">Inglés</string>
+    <string name="es_lang">Español</string>
+
+    <!-- Array Resources -->
+    <string-array name="language_options">
+        <item>Euskera</item>
+        <item>Inglés</item>
+        <item>Español</item>
+    </string-array>
+</resources>
